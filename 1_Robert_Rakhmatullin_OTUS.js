@@ -1,4 +1,4 @@
-const arr = [['a', 'h'], ['a', 'c'], ['d', 'e']];
+const arr = [['a', 'b'], ['a', 'c'], ['d', 'e']];
 let guid = []; 
 let arrVal = []; 
 let temp = [];
