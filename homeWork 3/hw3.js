@@ -1,3 +1,9 @@
+class CustomElement extends HTMLElement{
+    constructor (){
+       super()
+       tree.attachShadow({mode: 'open'})            
+    }
+   connectedCallback(){
 const data = {
     "HP": {
       "3PAR": {},
@@ -27,7 +33,9 @@ const data = {
           ul.appendChild(li);   
       }
       return ul;      
-  }    
-  tree.attachShadow({mode: 'open'}); 
+  }     
   const container = document.getElementById('tree');
   tree.shadowRoot.innerHTML=  myTree(container, data);
+ };
+}
+customElements.define("my-tree", CustomElement)
