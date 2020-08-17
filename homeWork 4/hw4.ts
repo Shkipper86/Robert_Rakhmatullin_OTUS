@@ -1,8 +1,4 @@
 function PreSaveAction(): boolean {
-  interface URLString {
-    URLP: String;
-    tit: String;
-  }
     let test:string = $('nobr:contains("Договор / Заказ")').closest('tr').find('.ms-rtestate-write').html();
     let arr:string []= test.split('');
     let s:number = arr.length;
