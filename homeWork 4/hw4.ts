@@ -2,8 +2,7 @@ function PreSaveAction(): boolean {
     const test:string = $('nobr:contains("Договор / Заказ")').closest('tr').find('.ms-rtestate-write').html();
     const arr:string []= test.split('');
     const s:number = arr.length;
-    if (s<=8){
-      const input: string = prompt('Введите ссылку на договор в формате: название договора#ссылка');
+    if (s<=8){      
       inputString();      
     }
     return true;
