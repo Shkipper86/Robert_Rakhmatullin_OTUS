@@ -8,8 +8,8 @@ function PreSaveAction(): boolean {
     return true;
 } 
 function inputString(): void{
-  var input: string = prompt('Введите ссылку на договор в формате: название договора#ссылка');
-  var [tit,URLP, ...rest] = input.split('#');
+  const input: string = prompt('Введите ссылку на договор в формате: название договора#ссылка');
+  const [tit,URLP, ...rest] = input.split('#');
   if (URLP == null){
       PreSaveAction();       
 }   
