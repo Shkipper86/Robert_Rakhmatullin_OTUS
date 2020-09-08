@@ -1,0 +1,22 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "main": "graphQLApollo.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "graphpack",
+    "build": "graphpack build",
+    "graphQl": "node graphQLApollo"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "graphpack": "^1.0.9"
+  },
+  "dependencies": {
+    "apollo-server": "^2.17.0",
+    "express-graphql": "^0.11.0"
+  },
+  "keywords": [],
+  "description": ""
+}
