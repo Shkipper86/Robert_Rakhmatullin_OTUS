@@ -1,7 +1,9 @@
-.set_lang{
+.select-language{
     padding-top: 10px; 
 }
-.set_num{
+.select-words{
     padding-top: 10px; 
-    padding-bottom: 10px;
+}
+.select-timer{
+    padding-top: 10px; 
 }
