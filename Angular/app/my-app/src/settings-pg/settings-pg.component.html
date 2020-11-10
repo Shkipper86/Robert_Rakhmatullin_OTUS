@@ -1,17 +1,23 @@
-<div class="set_lang">
-Language: 
-<select>
- <option>English</option>
- <option>other</option>
-</select>
-</div>
-<div class="set_num">
-    Nb. of words: 
-    <select>
-     <option>5</option>
-     <option>10</option>
-     <option>15</option>
-     <option>20</option>
-    </select>
+<div>
+    <div class="select-language">
+        <label>
+            Select Language:
+            <select type="select" [formControl]="_Lang">
+                <option>English</option>
+                <option>Other</option>
+            </select>
+        </label>
     </div>
-    <button>Back</button> <button>Save</button>
+    <div class="select-words">
+        <label>
+            Nb. of words:
+            <select type="select" [formControl]="_Words">
+                <option>5</option>
+                <option>10</option>
+                <option>15</option>
+                <option>20</option>
+            </select>          
+        </label>
+    </div>
+    <button (click)= "mySetItem()">Save</button>
+</div>
