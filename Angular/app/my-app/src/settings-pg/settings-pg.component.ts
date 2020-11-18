@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
-import { from } from 'rxjs';
+import { Component, OnInit } from '@angular/core'
+import { FormControl } from '@angular/forms'
+import {LocalStorageService} from '../local-storage.service'
 
 
 @Component({
@@ -11,15 +11,16 @@ import { from } from 'rxjs';
 export class SettingsPgComponent implements OnInit {
 _Lang = new FormControl('');
 _Words = new FormControl('');
-  constructor() { }
+  constructor(private localStorageService: LocalStorageService) { }
 
   ngOnInit(): void {
-   this._Lang.setValue(localStorage.getItem("_Lang"));
-   this._Words.setValue(localStorage.getItem("_Words"));
+    this._Lang.setValue(this.localStorageService.getItem("_Lang"))
+    this._Words.setValue(this.localStorageService.getItem("_Words"))
   }
+
   mySetItem(){
-    localStorage.setItem("_Lang",this._Lang.value);
-    localStorage.setItem("_Words",this._Words.value);
+    this.localStorageService.setItem("_Lang",this._Lang.value);
+    this.localStorageService.setItem("_Words",this._Words.value);
   }
 
 }
