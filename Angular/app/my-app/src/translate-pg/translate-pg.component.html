@@ -1,12 +1,12 @@
 
 <div class="translate-pg">
     <label>
-        <textarea ID="inputStr" type="text" placeholder="Insert text here - Вставьте текст здесь" [formControl]="translateword"></textarea>
+        <textarea id="inputStr" type="text" placeholder="Insert text here - Вставьте текст здесь" [formControl]="translateword"></textarea>
     </label>
 </div>
 <div class="translate">
     <button (click)="translate()">Translate</button>
 </div>
 <div>
-    <textarea ID="outputStr" type="text" readonly>{{wordsss$ | async }} / {{str | async}}</textarea>
+    <textarea ID="outputStr" type="text" readonly>{{str}}</textarea>
 </div>
