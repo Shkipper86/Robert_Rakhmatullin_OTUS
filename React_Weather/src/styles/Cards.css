@@ -1,0 +1,14 @@
+h3{
+ color: forestgreen;
+}
+
+.cards{
+    border: 50px;
+    border-width: 2px;
+    border-style: inset;
+}
+
+.weath{
+    color: darkblue;
+    font-weight: bold;
+}
