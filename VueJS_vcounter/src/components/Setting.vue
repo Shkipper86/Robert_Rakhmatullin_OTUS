@@ -59,10 +59,7 @@ export default {
     name:'Setting',
     data(){
         return{
-            levels: ['Level 1', 'Level 2', 'Level 3'],
-            level: 'Level 1',
             times: ['5 min', '10 min', ' 15 min', '20 min', '25 min'],
-            time: '5 min',
             lev: ['Level 1', 'Level 2', 'Level 3']
         }
     }    
